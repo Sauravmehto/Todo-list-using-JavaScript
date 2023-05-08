@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do list</title>
+
+    <!-- fontawsome icon -->
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- external css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="toast">
+        <ul id="toast">
+        </ul>
+      </div>
+
+      <!-- todo container -->
+      <div class="wrapper" id="wrapper">
+        <div class="input-field">
+          <i class="fa-solid fa-file-circle-plus"></i>
+          <input
+            id="get-todo"
+            type="text"
+            placeholder="Type your todo here..."
+          />
+          <i class="fa-solid fa-circle-plus" id="addtodo-btn"></i>
+        </div>
+        
+        <div>
+          <div class="task-status">
+            <span id="complete-all-task"><i class="fa-solid fa-check-double"></i>Complete all task</span>
+            <span id="clear-completed">Clear completed</span>
+          </div>
+          <hr />
+          <div class="tasks-container">
+            
+            <ul id="js-tasks">
+              <li>
+                <input type="checkbox" name="" id="input" /> learn javascript<i
+                  class="fa-regular fa-circle-xmark"
+                ></i>
+              </li>
+            </ul>
+            <hr />
+          </div>
+
+          <!-- task status -->
+          <div class="task-status">
+            <div>
+              <span id="total-task"></span>
+            </div>
+            <div>
+              <span class="active" id="all-tasks">All</span>
+              <span id="uncomplete">Uncomplete</span>
+              <span id="complete">Completed</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- javascript -->
+    <script src="script.js"></script>
+  </body>
+</html>
